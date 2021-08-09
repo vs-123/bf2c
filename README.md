@@ -28,6 +28,7 @@ $ ls
 bf2c examples/ main.go README.md
 $ cat examples/hello_world.bf
 ++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>.
+$ go build -o bf2c main.go
 $ ./bf2c -f examples/hello_world.bf
 $ ls
 bf2c examples/ main.go README.md output.c
