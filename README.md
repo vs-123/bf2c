@@ -1,22 +1,41 @@
 # bf2c
 An interpreter that converts brainfuck to C
 
-## Usage
+## Installation
+
 **Note: You need to have a Go compiler**
 
-Clone or download this repository
+### From Source
+
+Clone this repository
 ```
 $ git clone https://github.com/vs-123/bf2c.git
 ```
-(Unzip if you have downloaded)
+or [download the source](https://codeload.github.com/vs-123/bf2c/zip/refs/heads/main) and unzip it
 
 Go to the directory
 ```
 $ cd bf2c
 ```
-Compile it and run it
+Compile it
 ```
-$ go build -o bf2c main.go
+$ go build
+```
+
+### With go
+
+For go version 1.16 or lower:
+```
+$ go get -u github.com/vs-123/bf2c
+```
+
+For go version 1.17 or higher:
+```
+$ go install github.com/vs-123/bf2c@latest
+```
+
+## Usage
+```
 $ ls
 bf2c examples/ main.go README.md
 $ cat examples/hello_world.bf

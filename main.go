@@ -37,7 +37,7 @@ func compileCommand(command rune, tabs int) string {
 
 	case '.':
 		compiledCode += "printf(\"%c\", cells[currentCell]);"
-		
+
 	default:
 		compiledCode += "ic" // ic == invalid command
 	}
@@ -46,8 +46,8 @@ func compileCommand(command rune, tabs int) string {
 }
 
 func main() {
-	var inputFile = flag.String("f", "", "Input file")
-	var outputFile = flag.String("o", "output.c", "Output file")
+	inputFile := flag.String("f", "", "Input file")
+	outputFile := flag.String("o", "output.c", "Output file")
 
 	flag.Parse()
 
@@ -120,7 +120,7 @@ int main() {
 
 	compiledCode += "\n}"
 
-	err = ioutil.WriteFile(*outputFile, []byte(compiledCode), 0644)
+	err = ioutil.WriteFile(*outputFile, []byte(compiledCode), 0o644)
 	if err != nil {
 		fmt.Printf("ERROR: Could not write file `%s`\nReason: %s\n", *outputFile, err)
 		os.Exit(2)
