@@ -22,18 +22,6 @@ Compile it
 $ go build
 ```
 
-### With go
-
-For go version 1.16 or lower:
-```
-$ go get -u github.com/vs-123/bf2c
-```
-
-For go version 1.17 or higher:
-```
-$ go install github.com/vs-123/bf2c@latest
-```
-
 ## Usage
 ```
 $ ls
